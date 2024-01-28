@@ -7,11 +7,10 @@ interface Props {
 }
 
 function Square({ value, onSquareClick, isActive }: Props) {
+  const activateBoard = `square ${isActive ? "active-board" : ""}`;
+
   return (
-    <button
-      className={`square ${isActive ? "active-board" : ""}`}
-      onClick={onSquareClick}
-    >
+    <button className={activateBoard} onClick={onSquareClick}>
       {value}
     </button>
   );

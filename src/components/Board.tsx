@@ -1,5 +1,5 @@
 // Imports
-import Square from "./Square";
+import SmallBoard from "./SmallBoard";
 
 interface Props {
   ultimateBoard: number[][][];
@@ -24,36 +24,14 @@ function Board({
       {ultimateBoard.map((row, ultimateRowIndex) => (
         <div key={ultimateRowIndex} className="board-row">
           {row.map((smallBoard, ultimateColIndex) => (
-            <div
-              key={ultimateColIndex}
-              className={
-                calculateWinner(smallBoard)
-                  ? `winner ${calculateWinner(smallBoard)}`
-                  : "small-board"
-              }
-            >
-              {calculateWinner(smallBoard) ? (
-                <div>{calculateWinner(smallBoard)}</div>
-              ) : (
-                smallBoard.map((value, smallIndex) => (
-                  <Square
-                    key={smallIndex}
-                    value={value}
-                    onSquareClick={() =>
-                      onSquareClick(
-                        ultimateRowIndex,
-                        ultimateColIndex,
-                        smallIndex
-                      )
-                    }
-                    isActive={
-                      activeBoard.row === ultimateRowIndex &&
-                      activeBoard.col === ultimateColIndex
-                    }
-                  />
-                ))
-              )}
-            </div>
+            <SmallBoard
+              ultimateRowIndex={ultimateRowIndex}
+              ultimateColIndex={ultimateColIndex}
+              calculateWinner={calculateWinner}
+              smallBoard={smallBoard}
+              activeBoard={activeBoard}
+              onSquareClick={onSquareClick}
+            />
           ))}
         </div>
       ))}

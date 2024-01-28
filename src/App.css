@@ -19,6 +19,14 @@ h1 {
   color: #f6b17a;
 }
 
+h2 {
+  margin-top: 60px;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Ultimate Board CSS */
 .ultimate-board {
   display: grid;
@@ -100,4 +108,18 @@ div.winner.O div {
 
 div.winner.X div {
   color: #ff6962;
+}
+
+/* Footer CSS */
+.footer {
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  height: 10%;
+  width: 100%;
+}
+
+.footer a {
+  text-decoration: none;
+  color: lightblue;
 }
