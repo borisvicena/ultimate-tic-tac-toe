@@ -24,7 +24,7 @@
 - README
 - Code refactoring
 - Add functionality (restart game, ..)
-- Better UI/UX
+- Update UI/UX
 
 ### Report Issues
 
