@@ -40,9 +40,9 @@ function Game() {
       setStatus(
         winner ? `${winner} wins this board!` : `${xIsNext ? "X" : "O"}`
       );
-      if (winner && (activeBoard.row !== null || activeBoard.col !== null)) {
-        setActiveBoard({ row: null, col: null });
-      }
+      // if (winner && (activeBoard.row !== null || activeBoard.col !== null)) {
+      //   setActiveBoard({ row: null, col: null });
+      // }
       if (overallWinner) {
         setStatus(`${overallWinner} wins the game!`);
       }
