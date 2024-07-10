@@ -40,16 +40,6 @@ Experience the ultimate twist on the classic Tic-Tac-Toe game! Our web-based Ult
 
 If you encounter any bugs, issues, or have suggestions for improvement, please open an issue on the GitHub repository. Provide a clear and detailed description to help us understand and address the problem efficiently.
 
-### Attribution
-
-Contributors will be acknowledged in the Contributors section below.
-
-### Contributors
-
-- [@borisvicena](https://github.com/borisvicena)
-
-#### Thank you for contributing to make this project even better!
-
 <!-- CONTACT SECTION-->
 
 ## Contact
